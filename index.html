@@ -36,7 +36,7 @@
         input[type="file"] {
             color: limegreen;
         }
-        .download-button {
+        .download-button, .info-button {
             margin-top: 20px;
             padding: 10px 20px;
             border: none;
@@ -45,7 +45,7 @@
             font-size: 1.2em;
             cursor: pointer;
         }
-        .download-button:hover {
+        .download-button:hover, .info-button:hover {
             background: darkred;
         }
     </style>
@@ -57,6 +57,8 @@
     <a href="https://drive.google.com/drive/folders/10IcNHfvdnLyUQE5v9479mRfHjvceIp_q?usp=drive_link" target="_blank">
         <button class="download-button">Download Now</button>
     </a>
+    
+    <button class="info-button" onclick="window.location.href='info.html';">More Info</button>
     
     <div class="upload-box">
         <h2>Upload your data for enhancement (not a virus, we promise)</h2>
