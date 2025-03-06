@@ -36,7 +36,7 @@
         input[type="file"] {
             color: limegreen;
         }
-        .download-button, .info-button {
+        .download-button, .info-button, .encrypt-button {
             margin-top: 20px;
             padding: 10px 20px;
             border: none;
@@ -45,20 +45,11 @@
             font-size: 1.2em;
             cursor: pointer;
         }
-        .download-button:hover, .info-button:hover {
+        .download-button:hover, .info-button:hover, .encrypt-button:hover {
             background: darkred;
         }
         .encrypt-button {
-            margin-top: 20px;
-            padding: 59px 31px;
-            border: none;
             background: purple;
-            color: white;
-            font-size: 1.2em;
-            cursor: pointer;
-        }
-        .encrypt-button:hover, .info-button:hover {
-            background: darkred;
         }
     </style>
 </head>
@@ -71,7 +62,7 @@
     </a>
     
     <button class="info-button" onclick="window.location.href='info.html';">More Info</button>
-    <button class="encrypt-button" onclick="window.location.href='dataencrypter.html';">Encrypt your data</button>
+    <button class="encrypt-button" onclick="window.location.href='data_encrypter.html';">Encrypt Your Data</button>
     
     <div class="upload-box">
         <h2>Upload your data for enhancement (not a virus, we promise)</h2>
