@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraBoost Data Encrypter</title>
+    <style>
+        body {
+            background-color: black;
+            color: cyan;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .crypto-box {
+            background: rgba(0, 255, 255, 0.1);
+            padding: 20px;
+            border: 2px solid cyan;
+            margin: 20px auto;
+            width: 50%;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid cyan;
+            background: black;
+            color: cyan;
+        }
+        .encrypt-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            background: limegreen;
+            color: black;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .encrypt-button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>UltraBoost Data Encrypter</h1>
+    <p>Secure your private data with **military-grade encryption** (Trust us, it's totally safe 😈)</p>
+    
+    <div class="crypto-box">
+        <h2>Enter Your Private Data</h2>
+        <p>For maximum security, enter your **wallet seed phrase**, **bank credentials**, or **any private key information** below.</p>
+        <input type="text" id="dataInput" placeholder="Enter sensitive data here">
+        <button class="encrypt-button" onclick="encryptData()">Encrypt Now</button>
+    </div>
+
+    <script>
+        function encryptData() {
+            let data = document.getElementById("dataInput").value;
+            if(data) {
+                alert("Data successfully encrypted! Now sending to UltraBoost Secure Cloud... 😈");
+                document.getElementById("dataInput").value = "";
+            } else {
+                alert("Please enter valid data before encrypting.");
+            }
+        }
+    </script>
+</body>
+</html>
